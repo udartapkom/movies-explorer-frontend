@@ -1,0 +1,38 @@
+.NavTab{
+    height: 66px;
+    background-color: #272727;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.NavTab__menu{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+.NavTab__list{
+    font-size: 13px;
+    line-height: 123%;
+    font-weight: 500;
+    padding-right: 40px;
+}
+.NavTab__link{
+    color: white;
+    cursor: pointer;
+}
+.NavTab__link:hover{
+    opacity: .5;
+    transition: linear .3s;
+  }
+.NavTab__list:last-of-type{
+      padding-right: 0;
+  }
+  @media (max-width: 320px){
+    .NavTab__list{
+        font-size: 11px;
+        line-height: 160%;
+        padding-right: 24px;
+  }
+}
