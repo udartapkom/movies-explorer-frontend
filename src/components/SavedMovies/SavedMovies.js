@@ -8,7 +8,7 @@ import { likedMovies } from '../Movies/Movies'
 function SavedMovies(){
     return(
         <>
-    <Header />
+    <Header modificator = 'Logo_type_form-profile'></Header>
     <SearchForm />
     <MoviesCardList movies = { likedMovies } isRemove/>
     <Footer />

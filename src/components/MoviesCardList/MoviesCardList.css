@@ -34,18 +34,21 @@
     transition: linear .3s;
     cursor: pointer;
 }
-@media (max-width: 550px){
+@media (max-width: 680px){
 .MoviesCardList__content{
     padding-left: 30px;
     padding-right: 30px;
+    }
+}
+@media (max-width: 360px){
+    .MoviesCardList__content{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 @media (max-width: 320px){
     .MoviesCardList__more-button{
         width: 240px;
     }
-    .MoviesCardList__content{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+
 }
