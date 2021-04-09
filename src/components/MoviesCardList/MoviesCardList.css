@@ -34,6 +34,12 @@
     transition: linear .3s;
     cursor: pointer;
 }
+@media (max-width: 550px){
+.MoviesCardList__content{
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+}
 @media (max-width: 320px){
     .MoviesCardList__more-button{
         width: 240px;
