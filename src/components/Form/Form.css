@@ -29,6 +29,13 @@
 .Form__label:first-of-type{
     margin-top: 0;
 }
+.Form__label_type_error{
+    color: #EE3465;
+    margin-top: 5px;
+    padding: 0;
+    display: flex;
+    text-align: left;
+}
 .Form__input{
     background: transparent;
     border: none;
@@ -42,7 +49,6 @@
 .Form__button{
     width: 396px;
     height: 45px;
-    background-color: #4285f4;
     margin-top: 220px;
     color: white;
     font-size: 14px;
@@ -51,6 +57,12 @@
     border-radius: 3px;
     border: none;
     cursor: pointer;
+}
+.Form__button_state_disable{
+    background-color: #8b8b8b;
+}
+.Form__button_state_enable{
+    background-color: #4285f4;
 }
 .Form__button_window_signup{
     margin-top: 152px;

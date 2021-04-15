@@ -3,14 +3,14 @@ import Header from '../HeaderMovie/HeaderMovie';
 import SearchForm from '../SearchForm/SearchForm';
 import Footer from '../Footer/Footer';
 import MoviesCardList from '../MoviesCardList/MoviesCardList';
-import { likedMovies } from '../Movies/Movies'
 
-function SavedMovies(){
+function SavedMovies(props){
+    console.log(props);
     return(
         <>
     <Header modificator = 'Logo_type_form-profile'></Header>
     <SearchForm />
-    <MoviesCardList movies = { likedMovies } isRemove/>
+    <MoviesCardList movies = { props.movies } isRemove/>
     <Footer />
     </>
     )

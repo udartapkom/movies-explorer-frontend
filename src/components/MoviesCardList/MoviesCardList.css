@@ -6,6 +6,7 @@
     margin: 0 auto;
     padding-left: 70px;
     padding-right: 70px;
+    min-height: 45vh;
 }
 .MoviesCardList__more{
     background-color: #202020;

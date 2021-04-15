@@ -3,25 +3,46 @@ import HeaderMovie from '../HeaderMovie/HeaderMovie';
 import SearchForm from '../SearchForm/SearchForm';
 import MoviesCardList from '../MoviesCardList/MoviesCardList';
 import Footer from '../Footer/Footer';
-import moviesArray from '../../utils/moviesArray';
+import Preloader from '../Preloader/Preloader';
 
-let sliceNumber = 7;
-const moviesList = moviesArray.map((movies) => {
-    return movies;
-});
+function Movies(props) {
 
-const trimMoviesList =  moviesList.slice(0, sliceNumber);
+    const [shortFilm, setShortFilm] = React.useState(false);
 
-export const likedMovies = moviesList.filter((movie) => movie.isLike === true);
 
-function Movies(){
-    return(
-        <>
-<HeaderMovie modificator = 'Logo_type_form-profile'/>
-<SearchForm name = 'searchForm' />
-<MoviesCardList movies = { trimMoviesList }/>
-<Footer />
-        </>
-    )
+    function onFilterShort(filterOn) {
+        setShortFilm(filterOn);
+      }
+    
+      function filterShortFilm(movies) {
+        return movies.filter((item) => {
+          return item.duration < 40;
+        })
+      }
+    
+  return (
+    <>
+      <HeaderMovie modificator="Logo_type_form-profile" />
+      <SearchForm 
+      name="searchForm"
+      { ...props }
+      onFilterShort={onFilterShort}
+      />
+        {props.isLoading && <Preloader />}
+
+{!props.isLoading && props.loadingError === '' &&
+      <MoviesCardList 
+      movies={shortFilm? filterShortFilm(props.movies) : props.movies} 
+      savedMovies={props.savedMovies}
+      onBookmarkClick={props.onBookmarkClick}
+      isSavedMovie={props.isSavedMovie}
+      />
+}
+{
+  !props.isLoading && props.loadingError !== '' && <div className = 'Movies__inform'>{props.loadingError}</div>
+}
+      <Footer />
+    </>
+  );
 }
 export default Movies;

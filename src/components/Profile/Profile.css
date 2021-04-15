@@ -51,6 +51,9 @@
     line-height: 115%;
     font-weight: 400;
 }
+.Profile__submit-button_disabled{
+    color: #424242;
+}
 .Profile__signout{
     font-size: 13px;
     line-height: 115%;
