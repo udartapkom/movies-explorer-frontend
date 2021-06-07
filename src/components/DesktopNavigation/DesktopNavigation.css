@@ -1,0 +1,55 @@
+.DesktopNavigation__nav-links{
+    padding-top: 28px;
+    padding-bottom: 28px;
+    display: flex;
+    flex-direction: row;
+}
+.DesktopNavigation__nav{
+    display: flex;
+    flex-direction: row;
+}
+.DesktopNavigation__link{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 128%;
+    color: white;
+    margin: 0;
+    padding-right: 20px;
+    text-decoration: none;
+}
+.DesktopNavigation__link_type_profile{
+    font-weight: 500;
+    line-height: 114%;
+    margin: 0;
+}
+.DesktopNavigation__profile{
+    height: 30px;
+    margin-top: 21px;
+    margin-right: 70px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+.DesktopNavigation__icon-profile{
+    width: 10px;
+    height: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.DesktopNavigation__icon-background{
+    background-color: #313131;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    margin-left: 13px;
+}
+.DesktopNavigation__link:hover{
+    opacity: .5;
+    transition: linear .3s;
+    cursor: pointer;
+}
+.DesktopNavigation__link:last-of-type{
+    padding: 0;
+}

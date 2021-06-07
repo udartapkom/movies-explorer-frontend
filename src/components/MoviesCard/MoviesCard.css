@@ -1,0 +1,142 @@
+.MoviesCard{
+    background-color: #2f2f2f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+.MoviesCard:first-of-type{
+    margin-top: 70px;
+}
+.MoviesCard__info{
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 22px;
+}
+.MoviesCard__data{
+    display: flex;
+    flex-direction: column;
+}
+.MoviesCard__name{
+    font-size: 18px;
+    line-height: 122%;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+}
+.MoviesCard__time{
+    font-size: 11px;
+    line-height: 118%;
+    font-weight: 400;
+    color: white;
+    padding-top: 13px;
+    margin: 0;
+}
+.MoviesCard__save-button{
+    width: 14px;
+    height: 12px;
+    margin-top: 30px;
+    border: none;
+    background-color: #2f2f2f;
+}
+.MoviesCard__save-button_type_like{
+    background-image: url('../../images/like.svg');
+}
+.MoviesCard__save-button_type_dislike{
+    background-image: url('../../images/dislike.svg');
+}
+.MoviesCard__save-button_type_del{
+    background-image: url('../../images/del.svg');
+}
+.MoviesCard__image{
+    width: 220px;
+    height: 122px;
+    margin: 0;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    border: none;
+}
+.MoviesCard__save-button:hover{
+    opacity: .5;
+    transition: linear .3s;
+    cursor: pointer;
+}
+@media (max-width: 768px){
+    .MoviesCard{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .MoviesCard:first-of-type{
+        margin-top: 60px;
+    }
+}
+@media (max-width: 760px){
+    .MoviesCard{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .MoviesCard__name{
+        font-size: 16px;
+    }
+}
+@media (max-width: 700px){
+
+.MoviesCard__info{
+        padding-left: 10px;
+    }
+}
+@media (max-width: 620px){
+    .MoviesCard__info{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .MoviesCard__name{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px){
+    .MoviesCard{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .MoviesCard:first-of-type {
+        margin-top: 40px;
+    }
+    .MoviesCard__name{
+        font-size: 12px;
+    }
+    .MoviesCard__time{
+        font-size: 11px;
+        color: #8b8b8b
+    }
+    .MoviesCard__image{
+        padding: 0;
+        width: 300px;
+        height: 100%;
+    }
+    .MoviesCard__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 300px;
+        flex-direction: row;
+        padding-left: 0;
+    }
+    .MoviesCard__save-button{
+        margin-top: 0;
+        margin-right: 16px;
+    }
+    .MoviesCard__data{
+        margin-left: 12px;
+    }
+}
+@media (max-width: 335px){
+    .MoviesCard__image{
+        width: 100%;
+    }
+}

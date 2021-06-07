@@ -1,0 +1,209 @@
+.AboutMe{
+    background-color: #202020;
+}
+.AboutMe__content{
+    padding-top: 110px;
+    padding-right: 70px;
+    padding-left: 70px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.AboutMe__title{
+    font-size: 22px;
+    color: white;
+    font-weight: 400;
+    line-height: 118%;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #dadada;
+    margin: 0;
+}
+.AboutMe__more{
+    display: flex;
+    flex-direction: row;
+    padding-top: 66px;
+    justify-content: space-between;
+}
+.AboutMe__texts{
+    display: flex;
+    flex-direction: column;
+}
+.AboutMe__subtitle{
+    font-size: 50px;
+    line-height: 116%;
+    font-weight: 400;
+    padding-bottom: 18px;
+    color: white;
+    margin: 0;
+}
+.AboutMe__text-profession{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 110%;
+    color: white;
+    padding-bottom: 26px;
+    margin: 0;
+}
+.AboutMe__text-description{
+    font-size: 14px;
+    line-height: 157%;
+    color: white;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0;
+}
+.AboutMe__photo{
+    width: 270px;
+    height: 327px;
+}
+.AboutMe__links-block-social{
+    display: flex;
+    flex-direction: row;
+    padding-top: 99px;
+}
+.AboutMe__links{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.AboutMe__links_type_social{
+    font-size: 14px;
+    line-height: 121%;
+    font-weight: 500;
+    padding-right: 20px;
+}
+.AboutMe__portfolio{
+    font-size: 18px;
+    line-height: 110%;
+    font-weight: 400;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    margin: 0;
+    color: #8b8b8b;
+}
+.AboutMe__links-list{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.AboutMe__links_type_example{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 166%;
+    color: white;
+    padding-bottom: 19px;
+    margin-top: 20px;
+    border-bottom: 1px solid #424242;
+    display: flex;
+    justify-content: space-between;
+}
+.AboutMe__links_type_example:last-of-type{
+    border-bottom: none;
+    margin-bottom: 125px;
+    padding-bottom: 0;
+}
+.AboutMe__links:hover{
+    opacity: .5;
+    transition: linear .3s;
+}
+
+@media (max-width: 768px){
+    .AboutMe__content{
+        padding-top: 90px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .AboutMe__photo{
+        width: 255px;
+        height: 307px;
+    }
+    .AboutMe__subtitle{
+        font-size: 40px;
+        line-height: 100%;
+        padding-bottom: 16px;
+    }
+    .AboutMe__text-profession{
+        font-size: 12px;
+        line-height: 150%;
+        padding-bottom: 20px;
+
+    }
+    .AboutMe__text-description{
+        font-size: 12px;
+        line-height: 150%;
+        padding-right: 50px;
+    }
+    .AboutMe__links-block-social{
+        padding-top: 87px;
+    }
+    .AboutMe__portfolio{
+        padding-top: 90px;
+    }
+    .AboutMe__links_type_example{
+        font-size: 28px;
+        line-height: 178%;
+    }
+    .AboutMe__links_type_example:last-of-type {
+        margin-bottom: 90px;
+    }
+}
+@media (max-width: 550px){
+    .AboutMe__more{
+        flex-direction: column-reverse;
+    }
+    .AboutMe__photo{
+        width: auto;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+    .AboutMe__links_type_example{
+        font-size: 22px;
+    }
+}
+@media (max-width: 460px){
+    .AboutMe__content{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .AboutMe__text-description{
+        padding-right: 0;
+    }
+    .AboutMe__links_type_example{
+        font-size: 18px;
+        letter-spacing: -1px;
+    }
+}
+@media (max-width: 340px){
+    .AboutMe__content{
+        padding-top: 70px;
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+    .AboutMe__title{
+        font-size: 18px;
+        padding-bottom: 28px;
+    }
+
+    .AboutMe__texts{
+        padding-top: 40px;
+    }
+    .AboutMe__subtitle{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .AboutMe__text-profession{
+        font-size: 11px;
+    }
+    .AboutMe__text-description{
+        font-size: 11px;
+    }
+    .AboutMe__links-block-social{
+        padding-top: 40px;
+    }
+    .AboutMe__portfolio{
+        padding-top: 70px;
+        padding-bottom: 20px;
+        font-size: 14px;
+    }
+}
